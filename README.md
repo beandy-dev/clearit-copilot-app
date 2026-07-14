@@ -1,5 +1,7 @@
 # ClearIT Copilot — Backend (Deploy)
 
+> **Aviso:** A instância em `clearit-copilot.onrender.com` é temporária, usada apenas para testes e avaliação da banca do programa Pulse Mais 2026. Será desativada em breve.
+
 Backend do ClearIT Copilot em produção. Recebe requisições do widget FreshService e da POC, processa com busca semântica + Gemini e retorna diagnósticos.
 
 **Squad Sherlock (B5) — Pulse Mais 2026**
@@ -136,8 +138,8 @@ Não copie: `.env`, `data/embeddings-cache.json`, `data/feedbacks.json` (gerados
 
 | Repo | Descrição |
 |------|-----------|
-| [clearit-copilot-backend](https://github.com/beandy-dev/clearit-copilot-backend) | Backend em produção (Render) |
-| [clearit-copilot-freshservice-app](https://github.com/beandy-dev/clearit-copilot-freshservice-app) | Widget FreshService (Custom App) |
+| [sherlock-clearit-copilot](https://github.com/beandy-dev/sherlock-clearit-copilot) | POC completa (frontend + backend + docs) |
+| [clearit-copilot-freshservice-api](https://github.com/beandy-dev/clearit-copilot-freshservice-api) | Widget FreshService (Custom App) |
 
 ---
 
