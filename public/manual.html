@@ -258,7 +258,7 @@ fdk pack --app-dir . --skip-coverage</pre>
 <h4>Uso</h4>
 <ol>
   <li>Abra qualquer ticket no FreshService</li>
-  <li>O widget aparece na <strong>sidebar direita</strong> com a descrição já pré-preenchida</li>
+  <li>O widget aparece na <strong>sidebar direita</strong> com o título do ticket pré-preenchido</li>
   <li>Clique <strong>"Buscar Diagnóstico"</strong></li>
   <li>Mesmas opções da POC: feedback, regerar, buscar na web, chat</li>
 </ol>
@@ -368,6 +368,7 @@ fdk pack --app-dir . --skip-coverage</pre>
 <h3>Para obter melhores resultados</h3>
 <ul>
   <li><strong>Descreva com detalhes</strong> — "Backup falhou" é vago. "Commvault job de backup deu timeout no storage NetApp às 2h, servidor PROD-DB-01" gera diagnóstico preciso.</li>
+  <li><strong>No widget, complemente o título</strong> — O widget pré-preenche apenas com o título do ticket (subject), que geralmente é curto. Para melhores resultados, complemente com detalhes antes de clicar "Buscar Diagnóstico". Na POC, a descrição completa é usada.</li>
   <li><strong>Inclua contexto técnico</strong> — mencione o produto (Nutanix, Commvault, Cisco), o ambiente (produção/homologação) e quando começou.</li>
   <li><strong>Verifique a fonte</strong> — toda sugestão indica de onde veio (Ticket #X, KB #Y). Valide antes de aplicar.</li>
   <li><strong>Use o chat para comandos</strong> — após o diagnóstico, pergunte "qual comando específico?" ou "como verifico isso?".</li>
