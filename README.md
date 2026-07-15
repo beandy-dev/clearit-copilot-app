@@ -107,7 +107,8 @@ clearit-copilot-deploy/
 ├── public/
 │   ├── index.html         # Frontend (serve como página de teste)
 │   ├── app.js
-│   └── styles.css
+│   ├── styles.css
+│   └── manual.html        # Manual do sistema (acessado pelo widget via URL)
 ├── data/
 │   ├── mock-tickets.json  # Base vetorial (40 tickets + 13 KBs)
 │   └── active-tickets.json
@@ -115,6 +116,12 @@ clearit-copilot-deploy/
 ├── .gitignore
 └── package.json
 ```
+
+---
+
+## Sobre o manual.html
+
+O manual do sistema (`public/manual.html`) está hospedado neste backend porque é a única URL pública HTTPS acessível pelo widget do FreshService. Quando o analista clica "📖 Manual" no widget, abre `backend_url/manual.html` em nova aba.
 
 ---
 
