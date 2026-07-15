@@ -126,6 +126,8 @@ clearit-copilot-deploy/
 
 O manual do sistema (`public/manual.html`) está hospedado neste backend porque é a única URL pública HTTPS acessível pelo widget do FreshService. Quando o analista clica "📖 Manual" no widget, abre `backend_url/manual.html` em nova aba.
 
+Os diagramas SVG (`fluxo-diagnostico.svg`, `arquitetura-atual.svg`, `arquitetura-futura.svg`) também estão aqui pelo mesmo motivo — são referenciados pelo manual e precisam ser servidos via HTTPS para renderizar corretamente no browser.
+
 ---
 
 ## Atualizar
