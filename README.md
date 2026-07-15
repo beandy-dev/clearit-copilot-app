@@ -108,7 +108,10 @@ clearit-copilot-deploy/
 │   ├── index.html         # Frontend (serve como página de teste)
 │   ├── app.js
 │   ├── styles.css
-│   └── manual.html        # Manual do sistema (acessado pelo widget via URL)
+│   ├── manual.html        # Manual do sistema (acessado pelo widget via URL)
+│   ├── fluxo-diagnostico.svg    # Diagrama: fluxo do analista
+│   ├── arquitetura-atual.svg    # Diagrama: arquitetura em produção
+│   └── arquitetura-futura.svg   # Diagrama: arquitetura planejada
 ├── data/
 │   ├── mock-tickets.json  # Base vetorial (40 tickets + 13 KBs)
 │   └── active-tickets.json
