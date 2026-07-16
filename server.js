@@ -1,4 +1,6 @@
 import express from 'express';
+import cors from 'cors';
+import fs from 'fs';
 
 // Prevenir crash por erros não tratados
 process.on('uncaughtException', (err) => {
@@ -7,8 +9,6 @@ process.on('uncaughtException', (err) => {
 process.on('unhandledRejection', (err) => {
   console.error('⚠️ Unhandled Rejection (servidor continua rodando):', err.message || err);
 });
-import cors from 'cors';
-import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
 import { GoogleGenerativeAI } from '@google/generative-ai';
@@ -328,15 +328,15 @@ app.post('/api/chat', async (req, res) => {
     const model = genAI.getGenerativeModel({ model: "gemini-flash-lite-latest", generationConfig: { temperature: 0.2 } });
 
     const prompt = `
-      Você é o ClearIT Copilot, respondendo perguntas do analista sobre um chamado de TI.
-      Sintomas: "${maskedDesc}"
-      Diagnóstico Inicial: "${diagnosis}"
-      Ações Recomendadas: ${JSON.stringify(actions)}
+      Você é o ClearIT Copilot, assistente técnico de suporte L1.
+      Responda SOMENTE sobre o chamado abaixo. Se a pergunta não for relacionada, diga: "Só posso ajudar com o chamado em análise."
 
-      Pergunta do Analista: "${maskedQuery}"
+      Chamado: "${maskedDesc}"
+      Diagnóstico: "${diagnosis}"
 
-      Responda de forma clara e objetiva com comandos práticos de troubleshooting L1.
-      Responda em Português do Brasil (pt-BR).
+      Pergunta: "${maskedQuery}"
+
+      Responda em pt-BR, de forma curta e prática.
     `;
 
     const result = await model.generateContent(prompt);
