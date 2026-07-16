@@ -272,7 +272,31 @@ fdk pack --app-dir . --skip-coverage</pre>
   <li>Preencha o nome e salve</li>
   <li>Na tela de instalação, configure a <strong>URL do Backend</strong> (ex: <code>https://seu-backend.onrender.com</code>)</li>
   <li>Instale</li>
+  <li>No <strong>Developer Portal</strong>, clique <strong>"Promote to Live"</strong> para publicar (o app só aparece na sidebar após publicação)</li>
 </ol>
+
+<div class="callout callout-warn">
+  <strong>Atenção:</strong> Após subir o zip, o app fica em "In Development" e não aparece na sidebar. É obrigatório publicar (Promote to Live) para que funcione nos tickets.
+</div>
+
+<h4>Atualizar para nova versão</h4>
+<ol>
+  <li>No Developer Portal, clique no card do app → <strong>"Add new version"</strong></li>
+  <li>Upload o novo zip → <strong>"Save and test"</strong></li>
+  <li>Em <strong>Manage Apps → In Development</strong>, habilite o toggle e clique <strong>"Update"</strong></li>
+  <li>Teste — se ok, volte no Developer Portal e clique <strong>"Promote to Live"</strong></li>
+</ol>
+
+<h4>Desinstalar ou deletar</h4>
+<ol>
+  <li>Acesse <code>https://SEU-DOMINIO.freshservice.com/a/admin/apps</code></li>
+  <li>Aba <strong>Custom Apps</strong> → encontre o app → <strong>Settings → Uninstall App</strong></li>
+  <li>Para deletar: após desinstalar, vá no Developer Portal → card do app → deletar</li>
+</ol>
+
+<div class="callout callout-error">
+  <strong>Erro "token expirado" ao deletar?</strong> Faça logout, limpe cookies do FreshService, logue novamente e tente em outro browser se persistir.
+</div>
 
 <h4>Uso</h4>
 <ol>
